@@ -47,7 +47,7 @@ export const DiaryStateContext = createContext();
 export const DiaryDispathContext = createContext();
 
 function App() {
-  const [data, dispatch] = useReducer(reducer, []);
+  const [data, dispatch] = useReducer(reducer, mockData);
   const idRef = useRef(3);
 
   // 새로운 일기 추가
